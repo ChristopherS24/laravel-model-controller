@@ -7,7 +7,15 @@
     Laravel Start 1
 </h1>
 
-<h2>
-    Ciao {{ $firstName }} {{ $lastName }}
-</h2>
+<main>
+    <h2>
+        Ciao
+    </h2>
+
+    @foreach ($movies as $item)
+    <li> {{ $item }} </li>
+
+    @endforeach
+
+</main>
 @endsection
